@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARIOCLUB ASSIGNMENT 2</title>
+    <link rel="stylesheet" href="css/materialize.css">
+</head>
+<body>
+    <nav class="red">
+        <div class="container">
+            <a href="">Marioclub</a>
+            <div class="right">
+                <a href="">Home</a>
+                <a href="">Friends</a>
+                <a href="">Gallery</a>
+                <a href="">Contact</a>
+            </div>
+        </div>    
+    </nav>
+    <div class="container">
+        <img src="img/banner_2.jpg" alt="Mario" class="responsive-img materialboxed">
+        
+    </div>
+    <div class="container">
+        <h1 class="red-text" > It's Me, Mario! </h1>
+        <p  class="flow-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit obcaecati dolorum quibusdam dignissimos asperiores voluptatem, consectetur voluptatum rerum. Totam, maiores veniam quasi quas dolor accusamus voluptates earum hic sed sit provident consequuntur iste aliquid optio labore architecto quod quibusdam officia laborum odit consectetur porro illo eum dignissimos? Aut laudantium tenetur deleniti sint beatae illo sequi ipsam voluptate, dolorem porro quaerat, dolores ex! Hic dolorem provident ad. Earum labore et in libero atque inventore delectus molestias alias beatae, dolorem ad nesciunt impedit officiis provident blanditiis deleniti architecto illo reprehenderit numquam magnam aperiam, fugiat nihil. Accusamus tempora magnam nulla quas tempore consequatur. 
+        </p>
+    </div>
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/mario_friends.jpg" alt="mario_friends" class="responsive-img">
+        </div>
+    </div>
+    <div class="container">
+        <h2 class="red-text"> Mario Friends </h2>
+        <p class="flow-text" > Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eveniet dolorem at rerum ex doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis fugit, iste maiores molestiae dolores iusto?
+        </p>
+        <div class="row">
+            <div class="col s12 l4 center-align red-text">
+                <img src="img/luigi.webp" alt="Luigi" class="responsive-img" >
+                <p class="flow-text"> Luigi </p>
+            </div>
+            <div class="col s12 l4 center-align red-text">
+                <img src="img/princess_peach.webp" alt="Princess Peach" class="responsive-img" >
+                <p class="flow-text"> Princess Peach </p>
+            </div>
+            <div class="col s12 l4 center-align red-text">
+                <img src="img/yoshi.webp" alt="Yoshi" class="responsive-img" >
+                <p class="flow-text" >Yoshi</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4 center-align red-text">
+                <img src="img/bowser.webp" alt="Bowser" class="responsive-img" >
+                <p class="flow-text" >Bowser</p>
+            </div>
+            <div class="col s12 l4 center-align red-text">
+                <img src="img/toad.webp" alt="Toad" class="responsive-img" >
+                <p class="flow-text" >Toad</p>
+            </div>
+        </div>
+    </div>
+    <div class="red white-text">
+        <div class="container">
+            <h2> Gallery </h2>
+            <p class="flow-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat pariatur doloremque nesciunt praesentium voluptates obcaecati ad quasi labore asperiores quis.
+            </p>
+            <div class="slider">
+                <ul class="slides">
+                    <li> <img src="img/thumb-1.png" alt="Thumb 1" class="responsive-img"> </li>
+                    <li> <img src="img/thumb-2.png" alt="Thumb 2" class="responsive-img"> </li>
+                    <li> <img src="img/thumb-3.jpg" alt="Thumb 3" class="responsive-img"> </li>
+                    <li> <img src="img/thumb-4.jpg" alt="Thumb 4" class="responsive-img"> </li>
+                </ul>
+            </div>
+            <br>   
+            <h6 class="white-text center-align "> &copy; 2025 Blessing Jamgbadi </h6>
+            <br>
+        </div>
+    </div>
+    
+    
+    
+
+
+
+
+
+
+
+    <!-- Using js scripts below -->
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.js"></script>
+    <script>
+        $(document).ready(function(){
+        $('.materialboxed').materialbox();
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+        $('.parallax').parallax();
+        })
+    </script>
+    <script>
+        $('.slider').slider({
+            indicators:false
+        });
+    </script>
+</body>
+</html>
