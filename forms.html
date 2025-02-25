@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="center-align"> Registration Form </h1>
+        <p class="flow-text"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, id? </p>
+            <form action="">
+                <div class="row">
+                    <div class="col s12 l4 input-field">
+                        <input type="text" name="" id="surname">
+                        <label for="surname">Surname</label>
+                    </div>
+                    <div class="col s12 l4 input-field">
+                        <input type="text" name="" id="first-name">
+                        <label for="first-name">First Name</label>
+                    </div>
+                    <div class="col s12 l4 input-field">
+                        <input type="text" name="" id="other-names">
+                        <label for="other-names">Other Names</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class=" input-field col s12 ">
+                        <textarea id="contact-address" class="materialize-textarea"></textarea>
+                        <label for="contact-address"> Contact Address </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 l4 input-field">
+                        <input type="tel" name="" id="telephone">
+                        <label for="telephone"> Phone No </label>
+                    </div>
+                    <div class="input-field col s12 l4">
+                        <select>
+                        <option value="" disabled selected> Pick your State </option>
+                        <option value="1" class="black-text"> Edo </option>
+                        <option value="2" class="black-text"> Anambra </option>
+                        <option value="3" class="black-text"> Ekiti </option>
+                        <option value="4" class="black-text"> Ebonyi </option>
+                        <option value="5" class="black-text"> Osun </option>
+                        </select>
+                        <label>State of Origin</label>
+                    </div>
+                    <div class="input-field col s12 l4">
+                        <input type="text" name="" id="lga">
+                        <label for="lga">Local Government Area of Origin</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 l3 input-field">
+                        <select name="" id="">
+                            <option value="" disabled selected> Pick Your Country </option>
+                            <option value="1">Nigeria</option>
+                            <option value="1">France</option>
+                            <option value="1">Russia</option>
+                            <option value="1">Canada</option>
+                            <option value="1">America</option>
+                        </select>
+                        <label for="">Nationality</label>
+                    </div>
+                    <div class="col s12 l3 input-field">
+                        <input type="text" class="datepicker">
+                        <label for="">Date of Birth</label>
+                    </div>
+                    <div class="col s12 l3 input-field">
+                        <input type="text" class="timepicker">
+                        <label for=""> Appointment </label>
+                    </div>
+                    <div class="col s12 l3 input-field">
+                        <select name="" id="">
+                            <option value="" disabled selected >Select Your Status</option>
+                            <option value="1">Single</option>
+                            <option value="2">Married</option>
+                            <option value="3">I'd rather not say</option>
+                            <label for="">Marital Status</label>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 input-field">
+                        <p>
+                            <label>
+                            <input type="checkbox" />
+                            <span class="black-text" > <strong>
+                                I hereby affirm that all the information supplied therein are nothing but the truth. I promise to abide by the rules and regulations of the college, if admitted.
+                            </strong> 
+                            </span>
+                            </label>
+                        </p>
+                    </div>
+                </div>
+                <div class="center-align">
+                    <div class="btn btn-large center-align">
+                        Submit
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+
+
+    <!-- Using js scripts below -->
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.js"></script>
+    <script>
+        $(document).ready(function(){
+    $('select').formSelect();
+    });
+    $('.datepicker').datepicker({yearRange:50});
+    $('.timepicker').timepicker({twelveHour:false});
+    
+    </script>
+</body>
+</html>
